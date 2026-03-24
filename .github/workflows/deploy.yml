@@ -24,7 +24,7 @@ jobs:
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./gh-deployment-workflow   # root folder (contains index.html)
+          path: ./   # root folder (contains index.html)
 
       - name: Deploy
         uses: actions/deploy-pages@v4
