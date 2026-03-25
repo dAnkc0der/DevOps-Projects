@@ -3,9 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - branch
-    paths:
-      - './gh-deployment-workflow/index.html'
+      - main
 
 permissions:
   contents: read
@@ -26,7 +24,7 @@ jobs:
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./   # root folder (contains index.html)
+          path: ./gh-deployment-workflow   # best for your case
 
       - name: Deploy
         uses: actions/deploy-pages@v4
