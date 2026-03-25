@@ -3,7 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - branch
     paths:
       - './gh-deployment-workflow/index.html'
 
