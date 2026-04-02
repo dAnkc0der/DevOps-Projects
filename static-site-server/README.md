@@ -31,3 +31,27 @@ sudo systemctl enable --now nginx
 # Configure Firewall to allow HTTP (Port 80)
 sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --reload
+```
+
+### 2.Local Web Assets
+A simple static site was created in a local directory consisting of:
+
+- index.html
+- style.css
+
+### 3. Automated Deployment Script
+To streamline updates, a sync.sh script was created. This script synchronizes the local directory with the server's web root (/usr/share/nginx/html/).
+
+### 4. How to deploy
+
+- Ensure the script is executable:
+
+``` bash
+chmod +x sync.sh
+```
+
+- Run the deployment by providing the server IP:
+
+``` bash
+./sync.sh <Server IP>
+```
