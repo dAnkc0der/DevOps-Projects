@@ -1,8 +1,8 @@
 #!/bin/bash
 
 IP=$1
-KEY="/Users/utkarsh117/Downloads/AWS-Key/Key-Pair-2.pem"
-WEBPATH="/Users/utkarsh117/Downloads/web/"
+KEY="Path to Key Pair stored for AWS."
+WEBPATH="Path where static site server assets are kept."
 
 rsync -avz -e "ssh -i $KEY" --rsync-path="sudo rsync" "$WEBPATH" ec2-user@"$IP":/usr/share/nginx/html/
 
