@@ -6,3 +6,4 @@
 4. [Gh-Deployment-Workflow](https://roadmap.sh/projects/github-actions-deployment-workflow)
 5. [SSh-Remote-Server-Seup](https://roadmap.sh/projects/ssh-remote-server-setup)
 6. [Static-Site-Server](https://roadmap.sh/projects/static-site-server)
+7. [Dummy-systemd-service](https://roadmap.sh/projects/dummy-systemd-service)
